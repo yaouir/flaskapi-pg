@@ -13,7 +13,12 @@ class StockOut(StockIn):
     forecast: dict
 
 
+
 # routes 
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
 
 @app.post("/predict", response_model = StockOut, status_code=200)
 def get_prediction(payload: StockIn):
