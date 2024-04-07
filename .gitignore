@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 
 .DS_Store
-fastapi-env/
+/fastapi-env/*
